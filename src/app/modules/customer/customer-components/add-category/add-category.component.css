@@ -1,0 +1,97 @@
+.parent {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.child {
+    padding: 50px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    
+}
+
+.imeDiv {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    height: 180px;
+    width: 180px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.upload-label {
+    cursor: pointer;
+}
+
+.upload-icon {
+    width: 70px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.login-form-button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Style pour les catégories */
+.category {
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre */
+    padding: 20px; /* Espacement intérieur */
+    margin-bottom: 20px; /* Marge inférieure pour séparer les catégories */
+}
+
+/* Style pour les titres de catégorie */
+.category h4 {
+    margin-bottom: 10px; /* Marge inférieure pour séparer le titre du contenu */
+}
+
+/* Style pour les entrées de formulaire */
+.category input,
+.category textarea {
+    border-radius: 4px; /* Coins arrondis pour les champs de saisie */
+    border: 1px solid #ccc; /* Bordure légère */
+    padding: 10px; /* Espacement intérieur */
+    width: 100%; /* Largeur totale */
+    box-sizing: border-box; /* La largeur inclut la bordure et le rembourrage */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animation de transition pour la bordure et l'ombre */
+}
+
+/* Style pour les entrées de formulaire au focus */
+.category input:focus,
+.category textarea:focus {
+    border-color: #007bff; /* Bordure bleue au focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Légère ombre bleue au focus */
+}
+ .btn-post{
+    background-color: #297ad0;
+    text-align: center;
+   border: none;
+   border-radius: 4px;
+    width: 220px;
+    height: 40px;
+    padding: 10px; /* Espacement intérieur */
+    width: 100%; /* Largeur totale */
+    box-sizing: border-box; /* La largeur inclut la bordure et le rembourrage */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+ }

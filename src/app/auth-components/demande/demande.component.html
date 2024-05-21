@@ -1,0 +1,27 @@
+
+<div class="container">
+  <div class="center-panel">
+    <div class="search-bar">
+      <div class="input-group">
+        <span class="input-icon"><i class="fas fa-search fa-lg"></i></span>
+        <input type="text" id="title-search" placeholder="Rechercher par domaine">
+      </div>
+      
+      <button onclick="search()">Rechercher</button>
+    </div>
+  
+  
+  </div>
+  </div>
+    <div class="category-list">
+      <div class="category-card"
+       *ngFor="let category of categories">
+        <h3  style="font-family: 'Times New Roman', Times, serif; font-size: 30px;" >{{ category.name }}</h3>
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">{{ category.description }}</p>
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; "><a style="color: rgb(3, 3, 145); 
+        font-family: 'Times New Roman', Times, serif ;font-size: 20px;">Veuillez contactez moi si vous etes intéressés! <br></a>{{ category.email}}</p>
+  
+        <!-- Autres détails de la catégorie ici -->
+      </div>
+    </div>
+    

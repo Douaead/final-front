@@ -1,0 +1,48 @@
+<div class="parent">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <div class="child">
+        <div class="imeDiv"  >
+            <h2 style="margin-left: auto; margin-right: auto; color:rgb(5, 5, 160) ;"><i class="material-icons" >folder</i>  Poster vos offres ici!</h2>
+        </div>
+        <form nz-form [formGroup]="categoryForm">
+            <!-- Section Upload Profile -->
+            
+        
+            <!-- Fin Section Upload Profile -->
+            
+            <!-- Section Name -->
+            <div class="category">
+                <div class="row">
+                    <div class="col-12" style="margin-top: 20px; background-color: rgb(238, 245, 245);">
+                        <h4 ><i class="material-icons">domain</i>  Domaine</h4>
+                        <input class="form-control" placeholder="Domaine" formControlName = "name" />
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Section Description -->
+            <div class="category">
+                <div class="row">
+                    <div class="col-12"style="margin-top: 20px; background-color: rgb(238, 245, 245);">
+                        <h4  ><i class="material-icons">description</i> Description</h4>
+                        <textarea rows="1" class="form-control" placeholder="Description" formControlName="description"></textarea>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="category">
+                <div class="row">
+                    <div class="col-12"style="margin-top: 20px; background-color: rgb(238, 245, 245);">
+                        <h4 ><i class="material-icons" style="margin-left: -20px;">gmail</i> Adresse Email</h4>
+                        <input class="form-control" placeholder="Adresse Email" formControlName = "email" />
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Section Description -->
+            
+            <button nz-button class="btn-post" 
+            (click)="postCategory()"> Poster</button>
+      
+

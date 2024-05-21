@@ -1,0 +1,149 @@
+.container {
+   
+  /* Centre l'image horizontalement et verticalement */
+  height: 100vh; /* Définit la hauteur de la div pour couvrir la hauteur de la fenêtre */
+  display: flex; /* Utilise Flexbox pour centrer le contenu verticalement */
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; 
+  position: relative;
+
+   margin-top: 100px;
+ 
+  /* Centre le contenu verticalement */
+ 
+}
+  
+  .title-container {
+    flex: 1; /* Fait en sorte que le conteneur du titre prenne tout l'espace restant */
+    margin-right: 20px; /* Marge à droite pour séparer le titre de l'image */
+  }
+  
+  .image {
+    width: 90%; /* Définir la largeur de l'image */
+    max-height: 80vh; /* Limiter la hauteur de l'image pour éviter le débordement */
+    margin-right: 50px; 
+    /* Marge à droite pour séparer l'image du titre */
+  }
+  
+  .image-container {
+    align-self: flex-end; /* Positionne l'image à droite de la page */
+  }
+  
+  .title {
+    font-size: 24px; /* Taille de la police du titre */
+    font-weight: bold; /* Mettre en gras le texte du titre */
+    margin-left: 20px; /* Marge à gauche pour séparer le titre de l'image */
+  }
+  /* Style pour le bouton Angular Material */
+a.mat-button {
+  color: white; /* Couleur du texte */
+  background-color: #1976d2; /* Couleur de fond */
+  padding: 10px 20px; /* Espacement intérieur du bouton */
+  border-radius: 5px; /* Bord arrondi */
+  text-decoration: none; /* Supprimer la soulignure du lien */
+  transition: background-color 0.3s ease; /* Animation de transition */
+}
+
+/* Style pour le survol du bouton */
+a.mat-button:hover {
+  background-color: #1565c0; /* Couleur de fond au survol */
+}
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Espace entre la barre de recherche et le tableau */
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #0e93c0;
+}
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  margin-left: 550px;
+  margin-right: 550px;
+  margin-top: -300px;
+}
+
+.search-bar .input-group {
+  margin-right: 20px; 
+}
+
+.search-bar input[type="text"] {
+  width: 500px; /* Largeur des champs de recherche */
+  height: 40px; /* Hauteur des champs de recherche */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px; /* Espace intérieur */
+  border: 1px solid #181717; /* Bordure légère */
+}
+
+.search-bar button {
+  height: 40px; /* Hauteur du bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px 20px; /* Espace intérieur */
+  background-color: #007bff; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  cursor: pointer; /* Curseur pointeur */
+}
+
+.search-bar button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+/* Styles pour les autres éléments restants */
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  width: 100%; /* Assurez-vous que les champs de saisie prennent toute la largeur disponible */
+}
+
+
+
+
+.center-panel {
+  flex: 3; /* Plus large que les autres panneaux */
+
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -450px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.category-card {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.1s ease;
+  }
+  
+  .category-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+

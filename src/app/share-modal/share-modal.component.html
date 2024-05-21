@@ -1,0 +1,23 @@
+<div class="modal-overlay" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h5 class="modal-title">Partager cette annonce</h5>
+        <button type="button" class="close" (click)="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Partager sur :</p>
+        <div class="social-icons">
+          <a [href]="facebookShareUrl" target="_blank">
+            <img src="assets/img/facebook.png" alt="Facebook">
+          </a>
+          <a [href]="twitterShareUrl" target="_blank">
+            <img src="assets/img/twitter.png" alt="Twitter">
+          </a>
+          <a [href]="linkedinShareUrl" target="_blank">
+            <img src="assets/img/linkedin.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  

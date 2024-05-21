@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annonces et Validation</title>
+    <link rel="stylesheet" href="dashboard.component.css">
+</head>
+<body>
+    <div class="container">
+        <form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+            <input nz-input placeholder="Enter Keyword to search" style="width: 20%;" formControlName="title" />
+            <button nz-button nzType="primary" style="margin-left: 15px;" [disabled]="validateForm.invalid">Rechercher</button>
+        </form>
+        
+        <div *ngIf="noCategoriesFound" style="margin-top: 10px; color: rgb(221, 17, 17);">
+            Aucun offre trouvé!
+        </div>
+        
+        <!-- Tableau des catégories -->
+        <table *ngIf="!noCategoriesFound && categories.length > 0" style="margin-top: 20px; width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Nom de la catégorie</th>
+                    <th>Description</th>
+                    <th>Adresse Email</th>
+                    <th>Décision</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let category of categories">
+                    <td>{{ category.name }}</td>
+                    <td>{{ category.description }}</td>
+                    <td>{{ category.email }}</td>
+                    <td>
+                        <button class="btn-validate" (click)="approveAndPostCategory(category.id)">Approuver</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

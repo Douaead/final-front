@@ -1,0 +1,376 @@
+.container {
+   
+    /* Centre l'image horizontalement et verticalement */
+    height: 100vh; /* Définit la hauteur de la div pour couvrir la hauteur de la fenêtre */
+    display: flex; /* Utilise Flexbox pour centrer le contenu verticalement */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; 
+    position: relative;
+  
+   
+    /* Centre le contenu verticalement */
+   
+}
+.search-bar {
+    width: 30%;
+    background-color: #f0f0f0; /* Couleur de fond */
+    padding: 10px; /* Espace intérieur */
+    box-sizing: border-box; /* Inclure le padding dans la largeur */
+    position: absolute; /* Position fixée pour rester en haut */
+margin-bottom: 700px;  
+margin-top: 60%;
+z-index: 1;  /* Élévation pour être au-dessus des autres éléments */
+  }
+  
+  .search-bar input[type="text"] {
+    width: 80%; /* Largeur de l'input */
+    padding: 8px; /* Espace intérieur */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+  }
+  
+  .search-bar button {
+    width: 15%; /* Largeur du bouton */
+    padding: 8px; /* Espace intérieur */
+    border: none; /* Pas de bordure */
+    background-color: #007bff; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointer */
+    font-size: 16px; /* Taille de la police */
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+  }
+ /* Styles pour le conteneur du slider */
+/* Styles pour le conteneur du slider */
+
+
+:host{
+    display: block;
+    width: 100%;
+}
+/* Styles pour le conteneur du slider */
+.slides {
+  width: 99%;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; 
+  /* Assurez-vous que le slider est positionné en arrière-plan */
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Styles pour le conteneur du slider et le contenu "about-us" */
+.container {
+  position: relative; /* Assurez-vous que le conteneur est positionné en relatif */
+}
+
+.about-us {
+  text-align: center;
+  position: absolute; /* Position absolue pour placer le contenu "about-us" */
+  top: 50%; /* Centre le contenu verticalement */
+  left: 50%; /* Centre le contenu horizontalement */
+  transform: translate(-50%, -50%); /* Centre le contenu parfaitement */
+  z-index: 2;
+  margin-top: 500px;
+  width: 97%;
+  background-color: #f1f3f5;
+}
+
+.about-us h2 {
+  display: inline-block; /* Permet au titre de se comporter comme un bloc en ligne */
+ text-align: left;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-size: 50px;
+ border-bottom: 2px solid #333; /* Ajoute une barre horizontale de 2 pixels solide de couleur grise */
+ padding-bottom: 10px; 
+ font-family: cursive; 
+ color: #333; 
+}
+   /* Espace entre le titre et le paragraphe */
+
+
+.about-us p {
+  display: inline-block; /* Permet au paragraphe de se comporter comme un bloc en ligne */
+  vertical-align:  middle ; 
+  line-height: 2; /* Par exemple, pour avoir 1.5 fois la taille de la police */
+  margin-right: 70px;
+  margin-left: 70px;
+  font-size: 20px;
+  font-family: cursive; 
+/* Centre le paragraphe verticalement par rapport au titre */
+}
+.about-us button {
+  background: none;
+  border: none;
+  font-size: 15px;
+  color: blue; /* Couleur du lien */
+  text-decoration: underline; /* Souligner le texte pour indiquer un lien */
+  cursor: pointer;
+  margin-right: 10px; /* Ajouter un peu d'espace entre les liens */
+}
+
+.about-us button:hover {
+  color: darkblue; /* Couleur du lien au survol */
+}
+
+
+
+.objectives {
+  text-align: center; /* Centrer le texte horizontalement */
+  position: absolute; /* Position absolue pour placer le contenu "objectives" */
+  top: calc(50% + 100px); /* Positionner 100 pixels en dessous de la moitié de la hauteur de la fenêtre */
+  left: 50%; /* Centre le contenu horizontalement */
+  transform: translate(-50%, -50%); /* Centre le contenu parfaitement */
+  z-index: 1.5;
+  margin-top: 890px;
+  width: 97%;
+  background-color: #f7f5ee; /* Assurez-vous que le contenu objectives est affiché au-dessus du contenu précédent */
+}
+
+.objectives h2 {
+  display: inline-block; /* Permet au titre de se comporter comme un bloc en ligne */
+  text-align: left; /* Alignement du texte à gauche */
+font-family: cursive; 
+ font-size: 50px; /* Taille de la police */
+  border-bottom: 2px solid #333; /* Ajoute une barre horizontale de 2 pixels solide de couleur grise */
+  padding-bottom: 10px; /* Espace sous la barre horizontale */
+  color: #333; 
+}
+
+.objectives p {
+  display: inline-block; /* Permet au paragraphe de se comporter comme un bloc en ligne */
+  vertical-align: middle; /* Centre le paragraphe verticalement par rapport au titre */
+  line-height: 1.5; /* Hauteur de ligne */
+  font-size: 20px;
+  margin-right: 70px;
+  margin-left: 70px;
+  font-family: cursive; 
+ /* Taille de la police */
+}
+
+.objectives button {
+  background: none; /* Pas de fond */
+  border: none; /* Pas de bordure */
+  font-size: 15px; /* Taille de la police */
+  color: blue; /* Couleur du lien */
+  text-decoration: underline; /* Souligner le texte pour indiquer un lien */
+  cursor: pointer; /* Curseur pointeur */
+  margin-right: 10px; /* Marge à droite */
+}
+
+.objectives button:hover {
+  color: darkblue; /* Couleur du lien au survol */
+}
+
+ 
+.post {
+  text-align: center; /* Centrer le texte horizontalement */
+  position: absolute; /* Position absolue pour placer le contenu "objectives" */
+  top: calc(50% + 100px); /* Positionner 100 pixels en dessous de la moitié de la hauteur de la fenêtre */
+  left: 50%; /* Centre le contenu horizontalement */
+  transform: translate(-50%, -50%); /* Centre le contenu parfaitement */
+  z-index: 1.5;
+  margin-top: 500px;
+  /* Assurez-vous que le contenu objectives est affiché au-dessus du contenu précédent */
+}
+
+.post h2 {
+  display: inline-block; /* Permet au titre de se comporter comme un bloc en ligne */
+  text-align: left; /* Alignement du texte à gauche */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50px; /* Taille de la police */
+  border-bottom: 2px solid #333; /* Ajoute une barre horizontale de 2 pixels solide de couleur grise */
+  padding-bottom: 10px; 
+  font-family: cursive; 
+  white-space: nowrap; /* Force le titre à rester sur une seule ligne */
+  color: #333; 
+  /* Espace sous la barre horizontale */
+}
+.content-wrapper {
+  display: flex; /* Utiliser Flexbox pour aligner les cadres horizontalement */
+  justify-content: space-around; /* Espacement égal entre les cadres */
+  margin-top: 20px; /* Marge en haut */
+}
+
+.content-box {
+  width: 300px; 
+  height: 50%;/* Largeur de chaque cadre */
+  border: 1px solid #ccc; /* Bordure */
+  padding: 10px; /* Espacement intérieur */
+  margin: 0 50px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  
+}
+
+.content-box h3 {
+  font-size: 18px; /* Taille du sous-titre */
+  margin-bottom: 10px;
+  color:#007bff /* Marge en bas */
+}
+.boutton {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.boutton button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boutton button:hover {
+  background-color: rgb(172, 172, 221);
+}
+
+
+.contact {
+    text-align: center; /* Centrer le texte horizontalement */
+    position: absolute; /* Position absolue pour placer le contenu "objectives" */
+    top: calc(50% + 100px); /* Positionner 100 pixels en dessous de la moitié de la hauteur de la fenêtre */
+    left: 50%; /* Centre le contenu horizontalement */
+    transform: translate(-50%, -50%); /* Centre le contenu parfaitement */
+    z-index: 1.5;
+    margin-top: 260px;
+    /* Assurez-vous que le contenu objectives est affiché au-dessus du contenu précédent */
+  }
+  
+  .contact h2 {
+    display: inline-block; /* Permet au titre de se comporter comme un bloc en ligne */
+    text-align: left; /* Alignement du texte à gauche */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px; /* Taille de la police */
+    border-bottom: 1px solid #333; /* Ajoute une barre horizontale de 2 pixels solide de couleur grise */
+    padding-bottom: 10px; 
+    font-family: cursive; 
+    white-space: nowrap; /* Force le titre à rester sur une seule ligne */
+    color: #333; 
+    /* Espace sous la barre horizontale */
+   
+  }
+
+
+  .contact img{
+    margin-top: 430px;
+
+  }
+
+
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.social-icons a {
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+    width: 100%;
+}
+
+.social-icons a:hover {
+    color: #555;
+}
+
+.site {
+    text-align: center; /* Centrer le texte horizontalement */
+    position: absolute; /* Position absolue pour placer le contenu "objectives" */
+    top: calc(50% + 100px); /* Positionner 100 pixels en dessous de la moitié de la hauteur de la fenêtre */
+    left: 50%; /* Centre le contenu horizontalement */
+    transform: translate(-50%, -50%); /* Centre le contenu parfaitement */
+    z-index: 1.5;
+    margin-top: 850px;
+    /* Assurez-vous que le contenu objectives est affiché au-dessus du contenu précédent */
+  }
+  
+  .site h2 {
+    display: inline-block; /* Permet au titre de se comporter comme un bloc en ligne */
+    text-align: left; /* Alignement du texte à gauche */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px; /* Taille de la police */
+    border-bottom: 2px solid #333; /* Ajoute une barre horizontale de 2 pixels solide de couleur grise */
+    padding-bottom: 10px; 
+    font-family: cursive; 
+    white-space: nowrap; 
+    color: #333; 
+  
+  /* Espace sous la barre horizontale */
+  }
+
+  .body {
+    position: absolute; /* Position absolue pour couvrir tout le conteneur parent */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir tout le conteneur */
+    background-position: center; /* Centre l'image de fond */
+    z-index: -1; /* Assurez-vous que l'image de fond est en arrière-plan */
+}
+.footer {
+    position: relative; /* Le footer reste fixé en bas de la fenêtre */
+    bottom: 0; /* Le footer est collé au bas de la fenêtre */
+    width: 100%; /* Le footer prend toute la largeur de la fenêtre */
+    background-color: #333; /* Couleur de fond du footer */
+    color: #fff; /* Couleur du texte du footer */
+    padding: 20px 0; /* Ajoute un peu d'espace intérieur en haut et en bas du footer */
+    text-align: center; 
+    margin-top: 200%;
+    height: 220px;/* Centre le texte à l'intérieur du footer */
+  }
+  
+  .footer-content {
+    display: flex; /* Utilisation de Flexbox pour aligner les éléments horizontalement */
+    justify-content: space-between; /* Répartit les éléments sur toute la largeur */
+    align-items: center; 
+    /* Centre les éléments verticalement */
+}
+
+.footer-left {
+    flex: 1; 
+    text-align: left; /* Fait en sorte que cet élément prenne le plus d'espace possible */
+}
+
+.footer-right {
+    margin-left: auto;
+    text-align: left;  /* Décale cet élément vers la droite autant que possible */
+}
+.icon-light {
+    color: #fff; /* Couleur des icônes sur un fond sombre */
+}
+
+.footer-center{
+    text-align: center;
+}
+.socialicons {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #333;
+    padding: 8px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+

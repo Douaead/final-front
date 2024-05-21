@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Styles pour les icônes */
+.social-icons a {
+    color: #000; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+  }
+  
+  /* Styles pour le texte associé aux icônes */
+  .social-icons p {
+    margin: 5px 0; /* Marge autour du texte */
+    font-size: 14px; /* Taille de la police */
+    color: #888; /* Couleur du texte */
+  }
+  

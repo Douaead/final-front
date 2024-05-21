@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="post" >
+      <img    src="/assets/img/loyalty.gif"   style="font-size: 2px;   width: 70px;  ">   
+    
+      <h2>Favoris</h2>
+  </div>
+
+<div class="job-container">
+  <div class="job-card" *ngFor="let job of favorites">
+    <h2 style="font-size: 22px;">{{ job.Titre }}</h2>
+    <p>{{ job.Description }}</p>
+    <p style="color: blue; font-size: 20px;">Ville :</p>
+    <p>{{ job['Ville de l\'entreprise'] }}</p>
+    <p style="color: blue; font-size: 20px;">Date de publication : </p>
+    <p>{{ job['Date de publication'] }}</p>
+    <button (click)="toggleFavorite(job)" class="favorite-button">
+      <i class="fa fa-heart"></i> <!-- Utilisez l'icône de cœur ici -->
+    </button>
+  </div>
+  
+  
+  </div>
+</div>

@@ -1,0 +1,39 @@
+
+
+ 
+
+<div class="container"  >
+    <div class="blurry-background"></div>
+    <div class="login-form">
+        <h1 class="title">Se Connecter</h1>
+        <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
+            <!-- Champ d'entrée pour l'email -->
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" placeholder="Email" />
+                <mat-icon matSuffix>person</mat-icon>
+                <mat-error *ngIf="loginForm.get('email')?.hasError('required')">Email is required</mat-error>
+                <mat-error *ngIf="loginForm.get('email')?.hasError('email')">Invalid email format</mat-error>
+            </mat-form-field>
+
+            <!-- Champ d'entrée pour le mot de passe -->
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Mot de passe</mat-label>
+                <input type="password" matInput formControlName="password" placeholder="Mot de passe" />
+                <mat-icon matSuffix>lock</mat-icon>
+                <mat-error *ngIf="loginForm.get('password')?.hasError('required')">Password is required</mat-error>
+                <mat-error *ngIf="loginForm.get('password')?.hasError('minlength')">Password must be at least 8 characters long</mat-error>
+            </mat-form-field>
+
+            <!-- Bouton pour soumettre le formulaire -->
+            <button mat-raised-button color="primary" class="login-form-button login-form-margin" type="submit" [disabled]="!loginForm.valid" class="submit-button">
+                Se connecter
+            </button>
+          
+            <!-- Lien vers la page de signup -->
+            <p class="signup-text">
+                Tu n'as Pas un Compte ? <a routerLink="/signup" class="signup-link">S'inscrire </a>
+            </p>
+        </form>
+    </div>
+</div>

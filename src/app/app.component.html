@@ -1,0 +1,58 @@
+<div *ngIf="!isAdminLoggedIn && !isCustomerLoggedIn ">  
+
+  <mat-toolbar color="primary"> 
+     <img src="assets/img/logo.png" width="160" height="auto">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    </button>
+  
+    <span class="example-spacer"></span>
+    <div class="nav-links">
+      <a nz-button nzType="link" routerLink="/home" routerLinkActive="active" >Acceuil </a>
+
+      <a nz-button nzType="link" routerLink="/emploi" routerLinkActive="active" >Annonces</a>
+      <a nz-button nzType="link" routerLink="/demande" routerLinkActive="active" >Offres </a>
+
+      <a nz-button nzType="link" routerLink="/login" routerLinkActive="active">
+        <mat-icon style="color: rgb(226, 140, 78);">person</mat-icon>
+      </a>
+    </div>
+  </mat-toolbar>
+ 
+  
+</div>
+
+<div *ngIf="isAdminLoggedIn">
+  <mat-toolbar color="primary">
+  
+    <img src="assets/img/logo.png" width="160" height="auto">
+    <span class="example-spacer"></span>
+    <div class="nav-links">
+      <a nz-button nzType="link" routerLink="/admin/dashboard" routerLinkActive="active" >Tableau De Bord</a>
+      <a nz-button nzType="link" routerLink="/login" routerLinkActive="active" (click)="logout()"><mat-icon style="color: rgb(226, 140, 78);">logout</mat-icon></a>
+    </div>
+   
+  </mat-toolbar>
+</div>
+
+<div *ngIf="isCustomerLoggedIn">
+  <mat-toolbar color="primary">
+   
+    <img src="assets/img/logo.png" alt="Logo" width="200" height="auto">
+    <span class="example-spacer"></span>
+    <div class="nav-links">
+      <a nz-button nzType="link" routerLink="/home" routerLinkActive="active" >Accueil </a>
+
+      <a nz-button nzType="link" routerLink="/emploi" routerLinkActive="active" >Annonces</a>
+      <a nz-button nzType="link" routerLink="/demande" routerLinkActive="active" >Offres </a>
+      <a nz-button nzType="link" routerLink="/add-category" routerLinkActive="active" >Poster Offre </a>
+    
+      
+    </div>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" nz-button nzType="link" routerLink="/favoris" routerLinkActive="active">
+      <mat-icon style="color:  rgb(226, 140, 78);">favorite</mat-icon>
+    </button>
+     <a nz-button nzType="link" routerLink="/login" routerLinkActive="active" (click)="logout()"><mat-icon style="color: rgb(226, 140, 78);">logout</mat-icon></a>
+  </mat-toolbar>
+</div>
+
+<router-outlet></router-outlet>

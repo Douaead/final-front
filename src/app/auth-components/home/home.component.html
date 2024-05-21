@@ -1,0 +1,119 @@
+
+
+<div class="container" >
+
+    <img    src="/assets/img/Work.gif"   style="font-size: 2px;   width: 100% ; height: 100%; margin-top: -50px;    ">   
+      
+
+      <div class="about-us">
+        <img    src="/assets/img/loyalty.gif"   style="font-size: 2px;   width: 70px;  ">   
+
+        <h2>A propos de nous</h2>
+        <p>
+            Bienvenue sur notre site dédié au web scraping des offres de stages et d'emploi ! Notre plateforme offre une solution innovante pour les chercheurs d'opportunités professionnelles en agrégeant et en organisant de manière efficace les annonces de stages et d'emplois disponibles sur le web.        </p>
+        <p *ngIf="showContentAboutUs" id="hidden-content">
+            Grâce à notre technologie de pointe de scraping, nous collectons des données provenant de diverses sources en ligne, ce qui vous permet de trouver rapidement et facilement les offres qui correspondent à vos critères. Que vous soyez étudiant à la recherche d'un stage enrichissant ou professionnel en quête de nouvelles opportunités de carrière, notre site vous offre un accès simplifié à un large éventail d'annonces pertinentes.        </p>
+        <button *ngIf="!showContentAboutUs" (click)="toggleContent('about-us')">Read More</button>
+        <button *ngIf="showContentAboutUs" (click)="toggleContent('about-us')">Show Less</button>
+    </div>
+    
+    <!-- Conteneur pour le contenu "objectives" -->
+    <div class="objectives">
+        <img    src="/assets/img/motivation.gif"   style="font-size: 2px;   width: 70px;  ">   
+
+        <h2>Notre objectif</h2>
+        <p>
+            Notre plateforme de web scraping des offres de stages et d'emploi vise à simplifier la recherche d'opportunités professionnelles pour les étudiants et les chercheurs d'emploi. Nous nous engageons à fournir un accès rapide et efficace à une large gamme d'offres provenant de diverses sources en ligne. Notre objectif principal est de centraliser toutes ces informations sur une seule plateforme conviviale, offrant ainsi aux utilisateurs une expérience de recherche fluide et personnalisée.        </p>
+        <button *ngIf="!showContentObjectives" (click)="toggleContent('objectives')">Read More</button>
+        <p *ngIf="showContentObjectives" id="hidden-content">
+            Nous aspirons à devenir le principal outil de recherche d'opportunités professionnelles, en offrant un accès transparent et efficace à un large éventail d'offres de stages et d'emploi. Notre engagement envers l'excellence et l'innovation continue de guider notre développement, dans le but de fournir une solution précieuse et indispensable pour tous ceux qui cherchent à faire progresser leur carrière."        </p>
+        <button *ngIf="showContentObjectives" (click)="toggleContent('objectives')">Show Less</button>
+  <div class="post">
+    <img    src="/assets/img/job.gif"   style="font-size: 2px;   width: 80px;  ">   
+
+    <h2>Voulez-vous poster votre propre offre?</h2>
+     
+    <div class="content-wrapper">
+        <div class="content-box " style="background-color: rgb(242, 228, 255);" >
+            <h3> 1</h3>
+            <p>Enregistrez-vous sans frais dès maintenant! Créez un compte et affichez votre offre d'emploi.</p>
+        </div>
+        <div class="content-box" style="background-color: rgb(230, 245, 231);">
+            <h3> 2</h3>
+            <p>Créez votre annonce d'emploi ! Choisissez un titre accrocheur, rédigez une description détaillée..
+            </p>
+        </div>
+        <div class="content-box" style="background-color: rgb(252, 236, 226);">
+            <h3> 3</h3>
+            <p>Publiez votre offre d'emploi dès maintenant! Laissez les entreprises vous trouver</p>
+        </div>
+    </div>
+
+    <div class="boutton">
+        <button nzType="link" routerLink="/login" routerLinkActive="active">Publier votre propre offre </button>
+    </div>
+     <div class="contact">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+<img    src="/assets/img/chat.gif"   style="font-size: 2px;   width: 70px;  ">   
+    <h2>  Contactez-nous</h2>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook fa-3x text-danger " style=" width: 200px"></i>            <p href="#">compte facebook</p>
+        </a>
+        <a href="#"><i class="fab fa-instagram fa-3x"style=" width: 200px"></i><p href="#">compte instagram</p></a>
+        <a href="#"><i class="fab fa-linkedin fa-3x" style=" width: 200px "></i><p href="#">compte linkdin</p></a>
+    </div>
+       
+    </div>
+    
+    <div class="site">
+        <img    src="/assets/img/browser.gif"   style="font-size: 2px;   width: 65px;  ">   
+    
+        <h2>Les sites de web scraping</h2>
+        <p>
+            <a href="https://www.stages-emplois.com/" target="_blank">
+              <img src="/assets/img/logo.png" alt="Logo" style="width: 200px; height: 70px; margin-right: 50px;">
+            </a>
+            <a href="https://www.stages-emplois.com/" target="_blank">
+              <img src="/assets/img/stages-emplois.png" alt="Stages Emplois" style="width: 200px;height: 65px; margin-right: 40px;">
+            </a>
+            <a href="https://www.marocannonces.com/" target="_blank" >
+              <img src="/assets/img/R.png" alt="R (1)" style="width: 200px;">
+            </a>
+          </p>
+    </div>
+ 
+  </div>
+
+    <!-- Footer -->
+   
+   </div>
+
+    
+</div>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h2 style="font-size: 40px; margin-left: 100px;  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Jobing</h2>
+            <p style="font-size: 26px; margin-left: 25px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -12px;">Find jobs & internships</p>
+            <p style="margin-left: 100px;"> &copy; 2024 Jobing</p>
+
+         
+
+          
+            
+        </div>
+       
+
+        <div class="footer-right">
+            <div class="socialicons">
+                <a href="#"><i class="fab fa-facebook fa-3x icon-light" style="margin-right: 100px;"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-3x icon-light" style="margin-right: 100px;"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-3x icon-light" style="margin-right: 100px;"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   

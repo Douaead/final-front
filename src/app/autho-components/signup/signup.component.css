@@ -1,0 +1,97 @@
+/* Styles pour le fond */
+.bg {
+    background-color: #F8F8F8;
+    padding: 20px;
+}
+
+/* Styles pour la parent div */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styles pour la child div */
+.child {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    
+    background-color: rgb(247, 247, 253); /* Couleur de fond blanche */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Styles pour l'imgDiv */
+.imgDiv {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styles pour le titre */
+.title {
+    text-align: center; /* Aligne le titre au centre */
+    margin-bottom: 20px;
+    color: rgb(5, 5, 160); /* Marge inférieure pour séparer le titre des champs de formulaire */
+}
+
+
+/* Styles pour le formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles pour les champs de formulaire */
+.form-field {
+    margin-bottom: 20px;
+}
+
+/* Styles pour les boutons */
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Styles pour le texte du bouton Register */
+button[mat-raised-button] {
+    background-color: #3f51b5;
+    color: white;
+}
+
+/* Styles pour le texte de lien login */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #3f51b5;
+}
+
+/* Styles pour la boîte de chargement */
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Styles pour le texte de la boîte de chargement */
+.spinner-text {
+    margin-top: 10px;
+    font-size: 16px;
+}
+.blurry-background {
+    position: absolute; /* Position absolue pour couvrir tout le conteneur parent */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/img/jobing.jpg'); /* Chemin vers votre image */
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir tout le conteneur */
+    background-position: center; /* Centre l'image de fond */
+    filter: blur(3px); /* Applique le flou à l'image de fond */
+    z-index: -1; /* Assurez-vous que l'image de fond est en arrière-plan */
+}

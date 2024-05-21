@@ -1,0 +1,51 @@
+<div class="con">
+  <div class="center-panel">
+      <div class="search-bar">
+          <div class="input-group">
+              <span class="input-icon"><i class="fas fa-search fa-lg"></i></span>
+              <input type="text" id="title-search" placeholder="Rechercher par titre">
+          </div>
+          <div class="input-group">
+              <span class="input-icon"><i class="fas fa-map-marker-alt fa-lg"></i></span>
+              <input type="text" id="city-search" placeholder="Rechercher par ville">
+          </div>
+          <button onclick="search()">Rechercher</button>
+      </div>
+
+      <div class="top">
+          <p>
+              <a href="https://www.stages-emplois.com/" target="_blank">
+                  <img src="/assets/img/logo.png" alt="Logo" style="width: 200px; height: 70px; margin-right: 50px;">
+              </a>
+              <a href="https://www.stages-emplois.com/" target="_blank">
+                  <img src="/assets/img/stages-emplois.png" alt="Stages Emplois" style="width: 200px;height: 65px; margin-right: 40px;">
+              </a>
+              <a href="https://www.stages-emplois.com/" target="_blank">
+                  <img src="/assets/img/R.png" alt="R (1)" style="width: 200px;">
+              </a>
+          </p>
+          <hr class="styled-line">
+      </div>
+
+      <div class="maroc-container">
+        <div class="maroc-card" *ngFor="let annouce of annouces">
+          <h2>{{ annouce.title }}</h2>
+          <p>{{ annouce.description }}</p>
+          <p>{{ annouce.date }}</p>
+          <p>{{ annouce.location }}</p>
+          <p><a [href]="annouce.link" target="_blank">Voir l'annonce</a></p>
+          <button (click)="toggleFavorite(annouce)" class="favorite-button">
+            <i class="fa fa-heart"></i>
+          </button>
+          
+        </div>
+      </div>
+      
+
+      <div class="cont">
+          <a nzType="link" routerLink="/emploi" routerLinkActive="active" class="button">1</a>
+          <a nzType="link" routerLink="/scrape" routerLinkActive="active" class="button active">2</a>
+          <a nzType="link" routerLink="/stage" routerLinkActive="active" class="button active">3</a>
+      </div>
+  </div>
+</div>

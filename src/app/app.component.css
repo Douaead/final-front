@@ -1,0 +1,67 @@
+.exemple-spacer{
+  flex : 1 1 auto;
+}
+/* Style global pour le toolbar */
+/* Style pour le mat-toolbar */
+/* Style pour le mat-toolbar */
+mat-toolbar {
+  background-color: rgb(5, 5, 160); /* Bleu primaire pour le toolbar */
+  color: rgb(255, 255, 255); /* Couleur du texte en blanc */
+  display: flex; /* Utilisez flex pour la mise en page */
+  align-items: center; /* Aligner les éléments au centre verticalement */
+  height: 80px; /* Hauteur du toolbar */
+  position: fixed; /* Fixe la barre d'outils en haut de la page */
+  top: 0; /* Aligne la barre d'outils en haut de la page */
+  width: 100%; /* Prend toute la largeur de la page */
+  z-index: 1000; /* Assure que le toolbar soit au-dessus du contenu */
+}
+
+/* Style pour le contenu de la page */
+.page-content {
+  padding-top: 80px; /* Correspond à la hauteur du mat-toolbar */
+  margin-top: 100px; /* Ajoute une marge supérieure équivalente à la hauteur du mat-toolbar */
+}
+
+
+
+/* Style pour les boutons d'icônes */
+.example-icon {
+  color: rgb(0, 0, 0); /* Couleur blanche pour les icônes */
+  margin-right: 10px; /* Ajouter de l'espace entre les boutons */
+}
+
+
+
+.mat-icon {
+  font-size: 30px; /* Taille de l'icône */
+  color:#536b85; /* Couleur de l'icône (bleu) */
+  margin-right: 5px; /* Marge à droite pour l'espacement */
+}
+
+/* Style pour l'espaceur */
+.example-spacer {
+  flex-grow: 1; /* Permettre à l'espaceur de remplir l'espace disponible */
+}
+
+/* Style pour les liens de navigation */
+/* Style global pour les liens de navigation */
+.nav-links a {
+  color: rgb(248, 244, 244); /* Couleur blanche pour les liens */
+  margin-right: 20px; /* Ajouter de l'espace entre les liens (15px) */
+  font-size: 20px; /* Taille de police moyenne */
+  text-decoration: none; /* Pas de soulignure */
+}
+
+/* Effet d'hover pour les liens de navigation */
+.nav-links a:hover {
+  /* Ajouter une soulignure survolée */
+  color:  rgb(226, 140, 78); /* Changer la couleur des liens en gris clair lors du survol */
+}
+
+/* Style pour les boutons de liens */
+
+
+/* Style pour les boutons d'icônes */
+mat-icon-button {
+  padding: 0 10px; /* Ajouter de l'espace entre les boutons */
+}

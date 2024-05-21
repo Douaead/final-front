@@ -1,0 +1,66 @@
+<div class="con">
+  <div class="center-panel">
+    <div class="search-bar">
+      <div class="input-group">
+        <span class="input-icon"><i class="fas fa-search fa-lg"></i></span>
+        <input type="text" [(ngModel)]="titleSearch" placeholder="Rechercher par titre">
+      </div>
+      <div class="input-group">
+        <span class="input-icon"><i class="fas fa-map-marker-alt fa-lg"></i></span>
+        <input type="text" [(ngModel)]="citySearch" placeholder="Rechercher par ville">
+      </div>
+      <button (click)="search()">Rechercher</button>
+    </div>
+
+    <div class="top">
+      <p>
+        <a href="https://www.stages-emplois.com/" target="_blank">
+          <img src="/assets/img/logo.png" alt="Logo" style="width: 200px; height: 70px; margin-right: 50px;">
+        </a>
+        <a href="https://www.stages-emplois.com/" target="_blank">
+          <img src="/assets/img/stages-emplois.png" alt="Stages Emplois" style="width: 200px;height: 65px; margin-right: 40px;">
+        </a>
+        <a href="https://www.stages-emplois.com/" target="_blank">
+          <img src="/assets/img/R.png" alt="R (1)" style="width: 200px;">
+        </a>
+      </p>
+      <hr class="styled-line">
+    </div>
+
+    <div class="job-container">
+      <!-- Afficher un message si aucune annonce n'est trouvée -->
+      <div *ngIf="jobs.length === 0" class="no-jobs-message">
+        <p class="no-jobs-text">Aucune annonce n'a été trouvée.</p>
+      </div>
+
+      <!-- Vos cartes d'emploi -->
+      <div *ngFor="let job of jobs" class="job-card">
+        <h2 style="font-size: 22px;">{{ job.Titre }}</h2>
+        <p>{{ job.Description }}</p>
+        <p style="color: blue; font-size: 20px;">Ville :</p>
+        <p>{{ job['Ville de l\'entreprise'] }}  
+          <p style="color: blue; font-size: 20px;">Lien de l'annonce :</p>
+         <div class="link-icons-container">
+          <!-- Lien de l'annonce -->
+          <a href="{{ job['Lien'] }}" target="_blank">Voir l'annonce</a>
+          <!-- Icône de favori -->
+        <p style="color: blue; font-size: 20px;">Date de publication :</p>
+        <p>{{ job['Date de publication'] }}</p>
+      
+        <!-- Conteneur pour le lien et les icônes -->
+       
+          <button (click)="toggleFavorite(job)" class="favorite-button">
+            <i class="fa fa-heart"></i> <!-- Icône de favori -->
+          </button>
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="cont">
+      <a nzType="link" routerLink="/emploi" routerLinkActive="active" class="button">1</a>
+      <a nzType="link" routerLink="/scrape" routerLinkActive="active" class="button active">2</a>
+      <a nzType="link" routerLink="/stage" routerLinkActive="active" class="button active">3</a>
+    </div>
+  </div>
+</div>

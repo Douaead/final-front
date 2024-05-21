@@ -1,0 +1,307 @@
+.container {
+   
+  /* Centre l'image horizontalement et verticalement */
+  height: 100vh; /* Définit la hauteur de la div pour couvrir la hauteur de la fenêtre */
+  display: flex; /* Utilise Flexbox pour centrer le contenu verticalement */
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; 
+  position: relative;
+
+   margin-top: -300px;
+ 
+  /* Centre le contenu verticalement */
+ 
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.search-bar .input-group {
+  margin-right: 20px; /* Marge entre les groupes de recherche */
+}
+
+.search-bar input[type="text"] {
+  width: 300px; /* Largeur des champs de recherche */
+  height: 40px; /* Hauteur des champs de recherche */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px; /* Espace intérieur */
+  border: 1px solid #181717; /* Bordure légère */
+}
+
+.search-bar button {
+  height: 40px; /* Hauteur du bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px 20px; /* Espace intérieur */
+  background-color: #007bff; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  cursor: pointer; /* Curseur pointeur */
+}
+
+.search-bar button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+/* Styles pour les autres éléments restants */
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  width: 100%; /* Assurez-vous que les champs de saisie prennent toute la largeur disponible */
+}
+
+
+
+
+.center-panel {
+  flex: 3; /* Plus large que les autres panneaux */
+
+}
+
+.con{
+  display: flex;
+  height: 100vh;
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
+
+
+}
+
+.top{
+  text-align: center; /* Centrer le texte horizontalement */
+  position: absolute; /* Position absolue pour placer le contenu "objectives" */
+  left: 50%; /* Centre le contenu horizontalement */
+  transform: translate(-50%, -50%); /* Centre le contenu parfaitement */
+  z-index: 1.5;
+  margin-top: 120px;
+
+}
+
+
+.top h2{
+  display: inline-block; /* Permet au titre de se comporter comme un bloc en ligne */
+  text-align: center;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  padding-bottom: 10px; 
+  left: 50%; /* Centre le contenu horizontalement */
+ color: #9c9999; 
+  font-family: cursive; 
+}
+
+
+.top p {
+  display: inline-block; /* Permet au paragraphe de se comporter comme un bloc en ligne */
+  line-height: 2; /* Par exemple, pour avoir 1.5 fois la taille de la police */
+
+  font-size: 20px;
+  font-family: cursive; 
+/* Centre le paragraphe verticalement par rapport au titre */
+}
+.top a{
+  justify-content: space-between; 
+
+}
+
+.job-container {
+
+  display: flex;
+  align-items: center;
+  margin-top: 180px;
+  display: flex; /* Utiliser Flexbox */
+  flex-wrap: wrap; /* Permettre le passage à la ligne */
+  justify-content: space-between; 
+  /* Espacement égal entre les cartes */
+
+}
+
+.job-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  width: 50%;
+  margin-right: 10px; /* Espacement entre les annonces horizontales */
+  margin-left: 10px; /* Espacement entre les annonces horizontales */
+background-color: #fdfaf8;
+  max-width: 300px; /* Ajustez la largeur maximale selon vos besoins */
+}
+
+.job-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  margin-bottom: 5px;
+}
+
+/* Style supplémentaire pour les annonces d'emploi individuelles */
+.job-card:nth-child(even) {
+  background-color: #f9f9f9; /* Couleur de fond pour les annonces d'emploi paires */
+}
+
+.job-card:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); /* Effet de survol avec une ombre */
+}
+.maroc-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.maroc-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  width: 80%;
+  margin-right: 140px; /* Espacement entre les annonces horizontales */
+  margin-left: 140px; /* Espacement entre les annonces horizontales */
+background-color: #fdfaf8;
+  max-width: 600px; 
+}
+.maroc-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.maroc-card p {
+  margin-bottom: 5px;
+}
+
+/* Style supplémentaire pour les annonces d'emploi individuelles */
+.maroc-card:nth-child(even) {
+  background-color: #f9f9f9; /* Couleur de fond pour les annonces d'emploi paires */
+}
+
+.maroc-card:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); /* Effet de survol avec une ombre */
+}
+
+
+.marocAnn-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.marocAnn-card {
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.marocAnn-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.marocAnn-details {
+  margin-top: 10px;
+}
+.styled-line {
+  border: none; /* Supprime la bordure par défaut */
+  height: 1px; /* Définit la hauteur de la ligne */
+  background-color: #ccc; /* Couleur de fond de la ligne */
+  margin-top: 200px;
+  width: 100%;
+  margin: 20px 0; /* Marge supérieure et inférieure pour espacement */
+}
+
+.body {
+  position: absolute; /* Position absolue pour couvrir tout le conteneur parent */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover; /* Ajuste la taille de l'image pour couvrir tout le conteneur */
+  background-position: center; /* Centre l'image de fond */
+  z-index: -1; /* Assurez-vous que l'image de fond est en arrière-plan */
+}
+.cont {
+  margin-top: -200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Assure que le conteneur occupe toute la hauteur de la page */
+}
+
+.button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #333;
+  text-decoration: none; /* Supprime le soulignement du lien */
+}
+
+.button:hover {
+  background-color: #333;
+  color: #fff;
+}
+.active{
+  background-color: #333;
+color: #fff;
+}
+.footer {
+  position: relative; /* Le footer reste fixé en bas de la fenêtre */
+  bottom: 0; /* Le footer est collé au bas de la fenêtre */
+  width: 100%; /* Le footer prend toute la largeur de la fenêtre */
+  background-color: #333; /* Couleur de fond du footer */
+  color: #fff; /* Couleur du texte du footer */
+  padding: 20px 0; /* Ajoute un peu d'espace intérieur en haut et en bas du footer */
+  text-align: center; 
+  margin-top: 200%;
+  height: 220px;/* Centre le texte à l'intérieur du footer */
+}
+
+.footer-content {
+  display: flex; /* Utilisation de Flexbox pour aligner les éléments horizontalement */
+  justify-content: space-between; /* Répartit les éléments sur toute la largeur */
+  align-items: center; 
+  /* Centre les éléments verticalement */
+}
+
+.footer-left {
+  flex: 1; 
+  text-align: left; /* Fait en sorte que cet élément prenne le plus d'espace possible */
+}
+
+.footer-right {
+  margin-left: auto;
+  text-align: left;  /* Décale cet élément vers la droite autant que possible */
+}
+.icon-light {
+  color: #fff; /* Couleur des icônes sur un fond sombre */
+}
+
+.footer-center{
+  text-align: center;
+}
+.socialicons {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #333;
+  padding: 8px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.no-jobs-text {
+color: red;
+font-weight: bold;
+}
